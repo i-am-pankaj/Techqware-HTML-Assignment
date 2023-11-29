@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "glyphicons";
+    src: url('./Assets/fonts/glyphicons-halflings-regular.eot');
+    src: url('./Assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('./Assets/fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('./Assets/fonts/glyphicons-halflings-regular.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sfuidisplaybolder";
+    src: url('./Assets/fonts/sfuidisplay-bold-webfont.woff') format('woff'),
+    url('./Assets/fonts/sfuidisplay-bold-webfont.woff2') format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sfuidisplaylighter";
+    src: url('./Assets/fonts/sfuidisplay-light-webfont.ttf') format('truetype'),
+    url('./Assets/fonts/sfuidisplay-light-webfont.woff') format('woff'),
+    url('./Assets/fonts/sfuidisplay-light-webfont.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sfuidisplaymed";
+    src: url('./Assets/fonts/sfuidisplay-medium-webfont.woff') format('woff'),
+    url('./Assets/fonts/sfuidisplay-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sfuidisplayreg";
+    src: url('./Assets/fonts/sfuidisplay-regular-webfont.woff') format('woff'),
+    url('./Assets/fonts/sfuidisplay-regular-webfont.woff2') format('woff2');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sfuidisplaybold";
+    src: url('./Assets/fonts/sfuidisplay-semibold-webfont.ttf') format('truetype'),
+    url('./Assets/fonts/sfuidisplay-semibold-webfont.woff') format('woff'),
+    url('./Assets/fonts/sfuidisplay-semibold-webfont.woff2') format('woff2');
+    font-weight:bold;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    width: 85vw;
+    margin: auto;
+}
+
+.banner-section{
+    background-image: url(./Assets/images/banner_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    height: 100px;
+}
+
+.header-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: white;
+    font-family: "sfuidisplayreg";
+}
+
+.store{
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+    height: 50px;
+}
+
+.store div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.banner-text{
+    width: 450px;
+    color: white;
+    margin-left: 10vw;
+    margin-top: 300px;
+}
+
+.banner-text h1{
+    font-size: 40px;
+    font-family: "sfuidisplaybolder";
+}
+
+.banner-text p{
+    margin-top: 20px;
+    line-height: 25px;
+    font-family: "sfuidisplayreg";
+}
+
+.explore-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    width: 80vw;
+}
+
+.section-image{
+    position: relative;
+}
+
+.dark{
+    position: relative;
+    z-index: 3;
+}
+
+.light{
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    bottom: 5px;
+}
+
+.section-text{
+    width: 275px;
+}
+
+.section-text h1{
+    font-size: 30px;
+    margin: 20px 0;
+    line-height: 40px;
+    font-family: "sfuidisplaybold";
+}
+
+.section-text p{
+    color:gray;
+    line-height: 25px;
+    font-family: "sfuidisplaylighter";
+}
+
+.deals-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    width: 80vw;
+}
+
+.section-main-img img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .banner-text{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .explore-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .deals-section{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    h1,p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .header{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .header-list ul{
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .banner-text{
+        margin: 0 auto;
+    }
+}
